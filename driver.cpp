@@ -25,7 +25,6 @@
 #include <iostream>
 #include <cassert> //allows for testing
 #include <string>
-#include "NDLList.h" //non dummy header list
 #include "CDLList.h" //dummy header circular doubly linked list
 using namespace std;
 
@@ -217,8 +216,6 @@ void runTestsInt(const string& listName) {
 }
 /* ============================= MAIN ============================= */
 int main() {
-    runTests<NDLList<string> >("NDLList<string> (non-dummy, singly)");
-    runTestsInt<NDLList<int> >("NDLList<int> (non-dummy, singly)");
 
     runTests<CDLList<string> >("CDLList<string> (dummy, circular, doubly)");
     runTestsInt<CDLList<int> >("CDLList<int> (dummy, circular, doubly)");
