@@ -2,6 +2,9 @@
 
 This project implements a circular doubly linked list using a dummy header node to simplify insertion and deletion logic. Each node contains pointers to both the next and previous nodes, and the structure is circular to eliminate special edge cases at the head and tail.
 
+Compare driver is also included and will have to compile with NDLList.cpp to perform runtime 
+analyze and determine efficiency.
+
 ## Features
 
 - Doubly linked node structure (next and previous pointers)
